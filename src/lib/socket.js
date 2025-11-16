@@ -7,7 +7,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: ["https://swift-chat-frontend.vercel.app", "http://localhost:5173"],
+    origin: ["https://swift-chat-frontend.vercel.app", "http://localhost:5173","https://swiftchat-frontend-eb3s.onrender.com"],
     credentials: true,
   },
 });
