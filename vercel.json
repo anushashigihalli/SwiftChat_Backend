@@ -1,6 +1,5 @@
 {
   "version": 2,
-  "rootDirectory": "backend",
   "builds": [
     {
       "src": "src/index.js",
