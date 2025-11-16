@@ -1,11 +1,14 @@
 import mongoose from "mongoose";
 
+console.log("Mongoose imported successfully");
+
 export const connectDB = async () => {
   try {
     if (!process.env.MONGODB_URI) {
       throw new Error('MONGODB_URI environment variable is required');
     }
     
+    console.log("Attempting to connect to MongoDB with URI:", process.env.MONGODB_URI);
     const conn = await mongoose.connect(process.env.MONGODB_URI, {
       // Additional options for better connection handling
       maxPoolSize: 10,

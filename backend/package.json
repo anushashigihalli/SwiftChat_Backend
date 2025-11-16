@@ -5,7 +5,8 @@
   "main": "src/index.js",
   "scripts": {
     "dev": "nodemon src/index.js",
-    "start": "node src/index.js"
+    "start": "node src/index.js",
+    "build": "echo \"No build step required for Node.js backend\""
   },
   "keywords": [],
   "author": "",
@@ -24,5 +25,8 @@
   },
   "devDependencies": {
     "nodemon": "^3.1.7"
+  },
+  "overrides": {
+    "buffer-equal-constant-time": "^1.0.1"
   }
 }
