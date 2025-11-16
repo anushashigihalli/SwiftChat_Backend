@@ -25,9 +25,7 @@ app.use(express.urlencoded({ limit: '10mb', extended: true }));
 app.use(cookieParser());
 app.use(
   cors({
-    origin: process.env.NODE_ENV === "production"
-      ? ["https://swift-chat-frontend.vercel.app", "http://localhost:8080", "http://localhost"]
-      : "http://localhost:5173",
+    origin: ["https://swift-chat-frontend.vercel.app", "http://localhost:5173", "http://localhost:8080", "http://localhost"],
     credentials: true,
   })
 );
