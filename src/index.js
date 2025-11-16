@@ -25,7 +25,7 @@ app.use(express.urlencoded({ limit: '10mb', extended: true }));
 app.use(cookieParser());
 app.use(
   cors({
-    origin: ["https://swift-chat-frontend.vercel.app", "http://localhost:5173", "http://localhost:8080", "http://localhost"],
+    origin: ["https://swift-chat-frontend.vercel.app", "http://localhost:5173", "http://localhost:8080", "http://localhost","https://swiftchat-frontend-eb3s.onrender.com"],
     credentials: true,
   })
 );
